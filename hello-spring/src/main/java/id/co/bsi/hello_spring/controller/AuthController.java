@@ -35,7 +35,7 @@ public class AuthController {
     @PostMapping("api/logout")
     public ResponseEntity<LogoutResponse> logout(@RequestBody LogoutRequest logoutRequest) {
         LogoutResponse logoutResponse = new LogoutResponse();
-        logoutResponse.setStatus("You are logged out");
+        logoutResponse.setStatus("You are now logged out");
 
         return ResponseEntity.ok(logoutResponse);
     }
